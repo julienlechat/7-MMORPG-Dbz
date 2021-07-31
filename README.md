@@ -2,7 +2,7 @@
 
 This repository is a personal project in React.JS, it is an online dragon ball game in which the player embodies a warrior.
 
-//test
+
 ## Screenshots
 
 <div align="center">
