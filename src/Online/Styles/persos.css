@@ -1,0 +1,23 @@
+.persos_div {
+    width: 150px;
+    margin: 10px;
+    border: 1px solid #ffc107;
+    background-color: #f8f9fa;
+    border-radius: .5rem;
+}
+.persos_nom {
+    text-align: center;
+}
+.persos_nom > a {
+    color: #344050;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.persos_level {
+    font-size: .8rem;
+}
+.persos_link {
+    color: #344050;
+    cursor: pointer;
+}

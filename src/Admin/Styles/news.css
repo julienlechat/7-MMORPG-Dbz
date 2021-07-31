@@ -1,0 +1,13 @@
+.admin_news_source {
+  font-family: sans-serif;
+  width: 75%;
+  min-height: 100px;
+  border: 1px dashed #aaa;
+  padding: 5px;
+  resize: none;
+  margin-bottom: 20px;
+}
+.admin_news {
+    font-size: 1rem;
+    color: rgb(52, 64, 80);
+}

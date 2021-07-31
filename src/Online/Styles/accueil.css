@@ -1,0 +1,37 @@
+.actuality_Menu {
+    max-width: 800px;
+    width: 100%;
+}
+.actuality {
+    width: 100%;
+    overflow: hidden;
+    border-radius: .375rem;
+    border: 1px solid #d8e2ef;
+    margin-bottom: 20px;
+}
+.actuality_Title {
+    color: #2c7be5;
+    font-weight: 500;
+    padding: 6px;
+    width: 100%;
+    border-bottom: 1px solid #d8e2ef;
+}
+.actuality_Title > span {
+    padding: 0 6px;
+    font-size: 0.8rem;
+}
+.actuality_Title > div {
+    padding: 0 6px;
+    font-size: 0.8rem;
+}
+
+.actuality_Content {
+    width: 100%;
+    padding: 6px;
+    font-size: 0.9rem;
+    color: #5e6e82;
+    background-color: #f9fafd;
+}
+.actuality_Content_div {
+    margin: 10px;
+}

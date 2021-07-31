@@ -1,0 +1,39 @@
+/* //////////////
+//     BODY    //
+////////////// */
+.loginCorp {
+    flex: 1;
+    padding: 25px;
+    background-color: #f9fafd;
+    border-radius: .25rem;
+}
+label {
+    min-width: 250px;
+    padding: 5px 20px;
+    line-height: 2rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #5e6e82;
+}
+label > input {
+    margin-left: 5px;
+    color: #344050;
+    background-color: #fff;
+    border: 1px solid #d8e2ef;
+    border-radius: .25rem;
+    padding: .3125rem 1rem;
+    height: 1.1rem;
+}
+input[type="submit"] {
+    background-color: #2c7be5;
+	color: #fff;
+    font-weight: 500;
+	border: 1px solid transparent;
+    border-radius: .25rem;
+    border-color: #2c7be5;
+	padding: .3125rem 1rem;
+	font-size: 1rem;
+    line-height: 1.5;
+	cursor: pointer;
+	outline: inherit;
+}

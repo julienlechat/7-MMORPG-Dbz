@@ -1,0 +1,63 @@
+.perso_div {
+    border-radius: .650rem;
+    overflow: hidden;
+    min-width: 508px;
+    box-shadow:inset 0px 0px 0px 1px #ffc107;;
+}
+.perso_background_div {
+    position: relative;
+    max-width: 220px;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.perso_background {
+    position: relative;
+    width: 100%;
+    object-fit: contain;
+    top: 0;
+    left: 0;
+}
+.perso_img {
+    position: absolute;
+    width: 100%;
+    object-fit: contain;
+    top: 0;
+    left: 0;
+}
+.perso_desc {
+    width: 450px;
+    margin: 0 25px;
+}
+.perso_title {
+    color: #344050;
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 12px;
+    padding-bottom: 0;
+}
+.perso_level {
+    width: 235px;
+    margin: 8px 0 2px 0;
+    font-size: 1.1rem;
+}
+.perso_infos {
+    min-width: 285px;
+}
+.perso_carac {
+    font-size: 1.2rem;
+    margin: 0;
+    line-height: 2.1rem;
+    color: #344050;
+    font-weight: 500;
+}
+.perso_ico {
+    width: 35px;
+}
+.perso_ico2 {
+    width: 25px;
+}
+.perso_exp {
+    font-size: 0.7rem;
+    color: #5e6e82;
+}

@@ -1,0 +1,261 @@
+/*
+    Fonts Declaration
+*/
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins'), url('./Fonts/Poppins-Regular.ttf') format('truetype')
+}
+
+/*
+    Général
+*/
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  height: 100%;
+  background: url('./img/bg.gif') fixed;
+  background-size: auto 100%, cover;
+}
+#root {
+  min-height: 100vh;
+  max-width: 1300px;
+  margin: auto;
+}
+h1, h2, h3, h4, h5 {
+  color: #fd7e14;
+  font-family: Poppins, Arial, sans-serif
+}
+p {
+  margin: 0;
+}
+
+/*
+    Fonts
+*/
+.font_poppins {
+  font-family: Poppins, Arial, sans-serif;
+}
+
+/*
+  Colors
+*/
+.color_grey {
+  color: #5e6e82;
+}
+.color_green {
+  color: #006d3f;
+}
+.color_red {
+  color: #781d2d;
+}
+.bg-warning {
+  background-color: #f5803e;
+}
+.bg-blue {
+  background-color: #2c7be5;
+}
+.bg-green {
+  background-color: #00d27a;
+}
+.bg-red {
+  background-color: #e63757;
+}
+
+/*
+    Taille
+*/
+.height_100 {
+  height: 100%;
+}
+.width_100 {
+  width: 100%;
+}
+.width_80 {
+  width: 80%;
+}
+.width_70 {
+  width: 70%;
+}
+/*
+    Mise en page
+*/
+.mt-5 {
+  margin-top: 5px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-15 {
+  margin-top: 15px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.mr-5 {
+  margin-right: 5px;
+}
+
+/*
+    Flex
+*/
+.f {
+  display: flex;
+}
+.justify_start {
+  justify-content: start;
+}
+.justify_c {
+  justify-content: center;
+}
+.justify_end {
+  justify-content: flex-end;
+}
+.justify_spaceb {
+  justify-content: space-between;
+}
+.justify_evenly {
+  justify-content: space-evenly;
+}
+.justify_stretch {
+  justify-content: stretch;
+}
+.align_c {
+  align-items: center;
+}
+.flexdirection_c {
+  flex-direction: column;
+}
+.flex1 {
+  flex: 1;
+}
+.flex2 {
+  flex: 2;
+}
+/*
+    Button
+*/
+.btn {
+margin-right: .5rem;
+color: #5e6e82;
+text-align: center;
+background-color: transparent;
+border: 1px solid transparent;
+padding: .3125rem 1rem;
+font-size: 1rem;
+line-height: 1.5;
+border-radius: .25rem;
+font-weight: 500;
+transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+cursor: pointer;
+font-family: Poppins, Arial, sans-serif
+}
+.btn_small {
+  padding: .1875rem .75rem;
+  font-size: .875rem;
+  line-height: 1.5;
+  border-radius: .2rem;
+}
+.btn_secondary {
+  color: #fff;
+  background-color: #748194;
+  border-color: #748194;
+  text-decoration: none;
+}
+.btn_secondary:hover {
+  color: #fff;
+  background-color: #626e80;
+  border-color: #5d6878;
+}
+.btn_outline_info {
+  color: #27bcfd;
+  border-color: #27bcfd;
+}
+.btn_outline_info:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #27bcfd;
+  border-color: #27bcfd;
+}
+/*
+    Progress Bar
+*/
+.progress {
+  display: flex;
+  height: 4px;
+  overflow: hidden;
+  line-height: 0;
+  font-size: .75rem;
+  background-color: #edf2f9;
+  border-radius: .25rem;
+}
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+
+}
+
+/*
+    Error
+*/
+.errorMsg {
+  color: #781d2d;
+  background-color: #fad7dd;
+  border-color: #f8c7d0;
+  padding: .65rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: .375rem;
+  max-width: 700px;
+}
+.errorMsg_close {
+  cursor: pointer;
+	outline: inherit;
+  background-color: inherit;
+  border: inherit;
+  margin: 0;
+  margin-left: 15px;
+  padding: 0;
+}
+.errorMsg_Icone {
+  margin-right: 10px;
+}
+.invalid {
+  border-color: red;
+}
+.valid {
+  border-color: green;
+}
+.alert-success {
+  color: #006d3f;
+  background-color: #ccf6e4;
+  border-color: #b8f2da;
+}
+
+/*
+    Box menu
+*/
+.main {
+  padding: 15px 30px;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+/*
+    Shadow
+*/
+.box_shadow {
+  box-shadow: 0 7px 14px 0 rgb(59 65 94 / 10%), 0 3px 6px 0 rgb(0 0 0 / 7%);
+}
+.box_shadow_connected {
+  box-shadow: 0 0 10px 3px rgb(0 0 0 / 70%);
+}

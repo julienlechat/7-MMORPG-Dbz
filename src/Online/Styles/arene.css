@@ -1,0 +1,29 @@
+.arene_table {
+    width: 80%;
+    color: #5e6e82;
+    border-collapse: collapse;
+}
+.arene_table tfoot>tr>th:first-child, .arene_table thead>tr>th:first-child, .arene_table tr td:first-child, .arene_table tr th:first-child {
+    padding-left: 1.25rem;
+}
+.arene_table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #edf2f9;
+}
+.arene_table td, .arene_table th {
+    padding: .5rem;
+    vertical-align: top;
+    border-top: 1px solid #edf2f9;
+}
+.arene_table > thead > * > th {
+    font-weight: 600;
+    font-size: .8rem;
+}
+.arene_table > tbody > * > th {
+    font-weight: 500;
+    font-size: .72rem;
+}
+.arene_title {
+    color: #344050;
+    margin: 10px 0;
+}

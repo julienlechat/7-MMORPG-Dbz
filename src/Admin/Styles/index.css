@@ -1,0 +1,74 @@
+.admin_main {
+    padding: 20px 12px;
+    background-color: #fff;
+}
+.admin_menu {
+    color: #006d3f;
+    background-color: #ccf6e4;
+    border: #b8f2da 1px solid;
+    border-radius: .350rem;
+    padding: 15px;
+}
+.admin_menu_title {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.admin_menu_ul {
+    font-size: 0.8rem;
+    margin: 8px auto;
+}
+.admin_menu_link {
+    text-decoration: none;
+    color: #006d3f;
+}
+
+/* ADMIN - NEWS */
+.button_news_delete {
+    cursor: pointer;
+	outline: inherit;
+    border: 0;
+    background: inherit;
+    color: #781d2d;
+    font-size: 1rem;
+}
+.news_add_button {
+    cursor: pointer;
+	outline: inherit;
+    text-decoration: inherit;
+    color: #fff;
+    background-color: #2c7be5;
+    border-color: #2c7be5;
+    border: 1px solid transparent;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    border-radius: .25rem;
+    padding: .3125rem 1rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.news_add_text {
+    margin-left: 5px;
+}
+.news_add_form {
+    width: 100%;
+    padding: 0 30px
+}
+.news_add_label {
+    min-width: 350px;
+    max-width: 750px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.news_add_textarea {
+    padding: .3125rem 1rem;
+    min-height: 100px;
+    height: auto;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border: 1px solid #d8e2ef;
+    border-radius: .25rem;
+    overflow: auto;
+    resize: none;
+}
