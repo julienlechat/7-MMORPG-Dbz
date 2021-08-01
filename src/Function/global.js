@@ -7,7 +7,7 @@ global.Link_protocol = 'http'
 global.Link_url = () => {
     const LOCAL_DOMAINS = ["localhost", "127.0.0.1", "192.168.1.26"];
     const PUBLIC_BACKEND = ["localhost"]
-    const PORT = '3000'
+    const PORT = '3001'
     if (LOCAL_DOMAINS.includes(window.location.hostname)) return window.location.hostname + ':' + PORT
     return PUBLIC_BACKEND + ':' + PORT
 }

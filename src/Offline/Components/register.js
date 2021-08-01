@@ -117,7 +117,9 @@ class Register extends Component {
                     .then((token) => {this.props.handler(token)})
                     .catch((err) => {this.setState({errRequest: err})})
             })
-            .catch((err) => {this.setState({errRequest: err})})
+            .catch((e) => {
+                if (typeof e === 'string') return this.setState({errRequest: e})
+                return console.log(e)})
     }
 
     ErrorReturn = () => {
