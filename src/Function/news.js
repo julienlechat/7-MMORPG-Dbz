@@ -7,7 +7,7 @@ import { token } from './global';
 */
 export function loadNews() {
     return new Promise((resolve, reject) => {
-        const path = '/api/c/news'
+        const path = '/api/news/get'
         axios.get(`${global.Link_protocol}://${global.Link_url()+path}`)
             .then((res) => {return resolve(res.data)})
             .catch((err) => {

@@ -5,7 +5,7 @@ import axios from 'axios';
 */
 export function Fn_MonPerso() {
     return new Promise((resolve, reject) => {
-        const path = '/api/c/perso/info'
+        const path = '/api/perso/info'
         const token = localStorage.getItem('token')
         const headers = { headers: {"Authorization" : `Bearer ${token}`} }
 

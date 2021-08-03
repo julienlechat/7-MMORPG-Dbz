@@ -33,7 +33,10 @@ class Login extends Component {
         e.preventDefault();
         Fn_Login(this.state.pseudo, this.state.mdp)
             .then((token) => {this.props.handler(token)})
-            .catch((err) => {this.setState({errorMsg: err})})
+            .catch((e) => {
+                if (typeof e === 'string') return this.setState({errorMsg: e})
+                console.log(e)
+            })
     }
 
     // Affiche les erreurs

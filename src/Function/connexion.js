@@ -13,8 +13,8 @@ export function Fn_Login(pseudo, pass) {
         axios.post(`${global.Link_protocol}://${global.Link_url()+path}`, {
                     pseudo: pseudo, mdp: pass })
             .then((res) => resolve(res.data.token))
-            .catch((err) => {
-                if (err.response) return reject(err.response.data)
+            .catch((e) => {
+                if (e.response) return reject(e.response.data)
                 return reject('Request error: Fn_Login')})
     })
 }
