@@ -48,9 +48,9 @@ class Monde extends Component {
                     <img className="carte_img" src={background.default} alt="carte" />
 
                     {this.state.carte.map((value, key) => {
-                        const imgpos = require(`../../img/carte/position/${etat}/${value.cposition}.png`)
+                        const imgpos = require(`../../img/carte/position/${etat}/${value.position}.png`)
                         return (
-                            <div key={key} className=" f flexdirection_c carte_img_div" style={{ top: value.x, left: value.y}} onClick={() => this.changePos(value.cposition)}>
+                            <div key={key} className=" f flexdirection_c carte_img_div" style={{ top: value.x, left: value.y}} onClick={() => this.changePos(value.position)}>
                                 <div className="f justify_c carte_fleche">
                                     <img src={fleche} alt="fleche"/>
                                 </div>

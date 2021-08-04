@@ -30,14 +30,14 @@ class PersoLive extends Component {
                 const obj = {...res, viemax: lifeMaxPerso(res.level, res.defense, res.intelligence)}
                 this.setState(obj)
                 this.props.perso(change ? {...obj, change: change} : obj)
-                this.loadLieu(res.carteEtat, res.cartePosition)
+                this.loadLieu()
             })
             .catch((e) => setError(e)
             )
     }
 
-    loadLieu(etat, position) {
-        Fn_getPosition(etat, position)
+    loadLieu() {
+        Fn_getPosition()
             .then((res) => {this.setState({lieu: res})})
             .catch((e) => setError(e))
     }

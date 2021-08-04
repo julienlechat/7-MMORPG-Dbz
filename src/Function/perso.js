@@ -23,7 +23,7 @@ export function Fn_MonPerso() {
 */
 export function Fn_MesPersos() {
     return new Promise((resolve, reject) => {
-        const path = '/api/c/persos/info'
+        const path = '/api/perso/infos'
         const token = localStorage.getItem('token')
         const headers = { headers: {"Authorization" : `Bearer ${token}`} }
 
@@ -40,7 +40,7 @@ export function Fn_MesPersos() {
 */
 export function Fn_changePerso(key) {
     return new Promise((resolve, reject) => {
-        const path = '/api/c/perso/change/'+key
+        const path = '/api/perso/change/'+key
         const token = localStorage.getItem('token')
         const headers = { headers: {"Authorization" : `Bearer ${token}`} }
 
