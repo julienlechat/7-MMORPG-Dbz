@@ -16,7 +16,7 @@ export function Fn_loadCarte() {
 
 export function Fn_changePosition(id) {
     return new Promise((resolve, reject) => {
-        const path = '/api/c/carte/change/pos/'+id
+        const path = '/api/carte/position/change/'+id
         const headers = { headers: {"Authorization" : `Bearer ${token()}`} }
         if (isNaN(id)) reject(`l'id est invalide`)
 
@@ -32,9 +32,6 @@ export function Fn_getPosition(etat, position) {
     return new Promise((resolve, reject) => {
         const path = '/api/carte/position/get'
         const headers = { headers: {"Authorization" : `Bearer ${token()}`} }
-        //if (isNaN(etat) || isNaN(position)) reject(`état/position invalide`)
-
-        //axios.post(`${global.Link_protocol}://${global.Link_url()+path}`, {etat: etat, position: position}, headers)
         axios.get(`${global.Link_protocol}://${global.Link_url()+path}`, headers)
             .then((res) => resolve(res.data))
             .catch((e) => {

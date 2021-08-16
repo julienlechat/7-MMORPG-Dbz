@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import '../Styles/arene.css'
 
 import { setError } from '../../Function/global'
-import { Fn_areneGetPlayerList, Fn_getDefisList } from '../../Function/arene'
+import { Fn_GetPlayerList, Fn_getDefis } from '../../Function/arene'
 
 class Arene extends Component {
     constructor(props) {
@@ -22,8 +22,8 @@ class Arene extends Component {
     // Check l'Etat et la Position du joueur pour déterminer s'il est bien dans l'arène
     checkPlayerArene() {
         try {
-            const { carteEtat, cartePosition } = this.props.perso
-            if (carteEtat === 1 && cartePosition === 0) return true
+            const { etat, position } = this.props.perso
+            if (etat === 1 && position === 0) return true
             return false
         } catch(e) {return false}
     }
@@ -37,7 +37,7 @@ class Arene extends Component {
 
     // Charge la liste des joueurs
     loadPlayerList() {
-        Fn_areneGetPlayerList()
+        Fn_GetPlayerList()
             .then((res) => { 
                 this.setState({players: res})
                 console.log(res) })
@@ -46,7 +46,7 @@ class Arene extends Component {
 
     // Charge la liste des défis
     loadDefisList() {
-        Fn_getDefisList()
+        Fn_getDefis()
             .then((res) => { 
                 this.setState({defis: res})
                 console.log(res) })
