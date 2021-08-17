@@ -27,3 +27,9 @@
     color: #344050;
     margin: 10px 0;
 }
+.arene_title:nth-child(n+3) {
+    margin-top: 45px;
+}
+.arene_link {
+    cursor: pointer;
+}
