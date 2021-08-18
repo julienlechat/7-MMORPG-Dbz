@@ -60,6 +60,7 @@ class Index extends Component {
             if (global.error && typeof global.error.errorMsg === 'string') {
                 this.setState(global.error)
                 global.error = null
+                window.setTimeout(() => {this.setState({errorMsg: '', errorColor: ''})}, 4000)
             }
             if (this.state.errorMsg === 'token invalid') {
                 global.error = null

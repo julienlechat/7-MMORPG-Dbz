@@ -33,25 +33,22 @@ class Arene extends Component {
     sendDefi(player) {
         try {
             Fn_sendDefi(player)
-                .then((res) => setError(res, 'bg-blue'))
+                .then((res) => setError(res, 'alert-success'))
                 .catch((e) => setError(e))
         } catch(e) {setError(e)}
     }
-
     // Charge la liste des joueurs
     loadPlayerList() {
         Fn_GetPlayerList()
             .then((res) => this.setState({players: res}))
             .catch((e) => setError(e))
     }
-
     // Charge la liste des défis
     loadDefisList() {
         Fn_getDefis()
             .then((res) => this.setState({defis: res}))
             .catch((e) => setError(e))
     }
-
     // Charge la liste des défis envoyées
     loadDefisSent() {
         Fn_getDefisSent()
@@ -70,7 +67,7 @@ class Arene extends Component {
                     <tr key={key} className="font_poppins">
                         <th><b>{player.pseudo}</b> [{player.nom}]</th>
                         <th><b>{player.level}</b></th>
-                        <th><div href="/" className="arene_link" onClick={() => this.sendDefi(player.id)} >Go</div></th>
+                        <th className="f justify_c"><div href="/" className="arene_link" onClick={() => this.sendDefi(player.id)} >Go</div></th>
                     </tr>)
             })
 
@@ -157,12 +154,17 @@ class Arene extends Component {
 
 
     render() {
+        var cptDefis = () => {
+            if (this.state.defis) return this.state.defis.length
+            return 0
+        }
+
         return (this.checkPlayerArene() ? 
         <div className="f flexdirection_c align_c width_100 arene_body">
                 <h1>Arène</h1>
                 <h5 className="arene_title">Liste des joueurs:</h5>
                 {this.listPlayer()}
-                <h5 className="arene_title">Défis reçus:</h5>
+                <h5 className="arene_title">{cptDefis() > 1 ? 'Défis reçus' : 'Défi reçu'}:</h5>
                 {this.defisList()}
                 <h5 className="arene_title">Défis envoyées:</h5>
                 {this.defisSentList()}
